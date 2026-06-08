@@ -1,0 +1,25 @@
+<svg width="231" height="183" viewBox="0 0 231 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0" y1="0" x2="231" y2="183" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF1B8"/>
+      <stop offset="0.22" stop-color="#E4B23D"/>
+      <stop offset="0.50" stop-color="#B67812"/>
+      <stop offset="0.74" stop-color="#F2C85B"/>
+      <stop offset="1" stop-color="#7A4A08"/>
+    </linearGradient>
+
+    <filter id="softGoldGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#B67812" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <path
+    d="M73.621.976C23.873 55.419-5.07 92.849 2.565 99.382 16.6 111.397 146.666 12.363 159.277 23.416c12.216 10.717-98.97 113.396-85.462 125.281 12.906 11.345 127.296-70.3 143.532-56.124 12.943 11.308-48.608 73.104-33.091 86.743 7.154 6.289 27.622-.332 45.925-8.086"
+    stroke="url(#goldGradient)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-miterlimit="10"
+    filter="url(#softGoldGlow)"
+  />
+</svg>

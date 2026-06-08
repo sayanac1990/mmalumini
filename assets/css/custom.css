@@ -1,0 +1,3367 @@
+.header_middle_info{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.join_now_btn{
+    display:flex;
+    align-items:center;
+}
+
+.header_join_btn{
+    background:#c89b3c;
+    color:#fff;
+    padding:12px 30px;
+    border-radius:6px;
+    font-weight:600;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    transition:.3s;
+}
+
+
+.header_join_btn i{
+    font-size:14px;
+}
+
+.header_join_btn:hover{
+    background:#0b2242;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+@media (max-width:991px){
+
+    .header_middle_style_one{
+        display:none;
+    }
+
+}
+
+/* auto counting section*/
+
+/* MMA STATS SECTION */
+.mma-stats-section{
+    position:relative !important;
+    z-index:5;
+    margin-top:0 !important;
+    padding:0 0 70px !important;
+}
+
+.mma-stats-wrap{
+    background:linear-gradient(135deg,#042d5c,#001d3d) !important;
+    border-radius:18px;
+    padding:30px 35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 18px 45px rgba(0,0,0,.14);
+    transform:translateY(0) !important;
+}
+
+.mma-stat-item{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:8px 35px;
+    position:relative;
+}
+
+.mma-stat-item:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:1px;
+    height:55%;
+    background:rgba(255,255,255,.18);
+}
+
+.mma-stat-icon{
+    width:54px;
+    height:54px;
+    min-width:54px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08) !important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* GOLDEN ICON */
+.mma-stat-icon i,
+.mma-stat-icon svg,
+.mma-stat-item .icon,
+.mma-stat-item i{
+    color: #D4AF37 !important;
+    font-size: 22px !important;
+}
+
+/* Optional: golden icon circle */
+.mma-stat-icon{
+    background: rgba(212,175,55,0.12) !important;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.mma-stat-content h3{
+    margin:0;
+    color:#fff !important;
+    font-size:28px;
+    font-weight:800;
+    line-height:1;
+}
+
+.mma-stat-content p{
+    margin:8px 0 0;
+    color:#dcecff !important;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* Tablet */
+@media(max-width:991px){
+    .mma-stats-wrap{
+        flex-wrap:wrap;
+        padding:25px;
+    }
+
+    .mma-stat-item{
+        flex:0 0 50%;
+        width:50%;
+        padding:18px 20px;
+    }
+
+    .mma-stat-item::after{
+        display:none;
+    }
+}
+
+/* Mobile */
+@media(max-width:767px){
+    .mma-stats-section{
+        padding:30px 0 50px !important;
+    }
+
+    .mma-stats-wrap{
+        flex-direction:column;
+        align-items:stretch;
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .mma-stat-item{
+        width:100%;
+        flex:0 0 100%;
+        padding:16px 10px;
+        border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    .mma-stat-item:last-child{
+        border-bottom:0;
+    }
+
+    .mma-stat-content h3{
+        font-size:24px;
+    }
+
+    .mma-stat-content p{
+        font-size:13px;
+    }
+}
+
+/*about section*/
+
+/* =====================================
+   MMA HERITAGE WELCOME SECTION
+===================================== */
+
+.about_section_home_one{
+    background:#f5efe3;
+    position:relative;
+    overflow:hidden;
+    padding:120px 0;
+}
+
+.about_section_home_one::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:url('../images/paper-texture.png');
+    opacity:.05;
+}
+
+/* LEFT */
+
+.mma-heritage-image{
+    position:relative;
+}
+
+.heritage-main-image img{
+    width:100%;
+    border:12px solid #e9dcc5;
+    border-radius:10px;
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+    filter:sepia(30%);
+}
+
+.heritage-badge{
+    position:absolute;
+    left:-30px;
+    bottom:-30px;
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+    background:#082b56;
+
+    border:6px solid #c79b3b;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:#fff;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.heritage-badge span{
+    font-size:52px;
+    font-weight:700;
+    line-height:1;
+    color:#d9b05a;
+}
+
+.heritage-badge small{
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* RIGHT */
+
+.mma-welcome-content{
+    padding-top:20px;
+}
+
+.mma-top-icon{
+    color:#b98a2e;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.mma-subtitle{
+    display:block;
+    color:#b98a2e;
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.mma-welcome-content h2{
+    color:#082b56;
+    font-size:58px;
+    line-height:1.1;
+    font-weight:700;
+    margin-bottom:20px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.mma-divider{
+    width:100px;
+    height:3px;
+    background:#b98a2e;
+    margin-bottom:35px;
+}
+
+.mma-feature-item{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.mma-feature-item .icon{
+    min-width:60px;
+    width:60px;
+    height:60px;
+    border:1px solid #c79b3b;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.mma-feature-item .icon i{
+    color:#b98a2e;
+    font-size:22px;
+}
+
+.mma-feature-item p{
+    color:#444;
+    line-height:1.9;
+    margin:0;
+    font-size:16px;
+}
+
+.mma-welcome-content blockquote{
+    margin-top:40px;
+    font-size:32px;
+    color:#082b56;
+    font-style:italic;
+    text-align:center;
+    border:none;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.mma-vintage-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#082b56;
+    color:#fff !important;
+    padding:15px 35px;
+    text-decoration:none;
+    border:2px solid #c79b3b;
+    transition:.3s;
+}
+
+.mma-vintage-btn:hover{
+    background:#c79b3b;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .about_section_home_one{
+        padding:80px 0;
+    }
+
+    .mma-welcome-content h2{
+        font-size:42px;
+    }
+
+    .heritage-badge{
+        width:130px;
+        height:130px;
+        left:10px;
+        bottom:10px;
+    }
+
+    .heritage-badge span{
+        font-size:34px;
+    }
+}
+
+@media(max-width:767px){
+
+    .mma-welcome-content h2{
+        font-size:34px;
+    }
+
+    .mma-feature-item{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .mma-feature-item .icon{
+        width:50px;
+        height:50px;
+        min-width:50px;
+    }
+
+    .heritage-badge{
+        width:110px;
+        height:110px;
+    }
+
+    .heritage-badge small{
+        font-size:11px;
+    }
+}
+.mma-heritage-content{
+    max-width:380px;
+}
+
+.mma-subtitle{
+    display:block;
+    font-size:42px;
+    font-weight:700;
+    color:#082b56;
+    line-height:1.2;
+    font-family:'Playfair Display', serif;
+}
+
+.mma-subtitle span{
+    color:#c4942f;
+}
+
+.mma-line{
+    width:80px;
+    height:3px;
+    background:#c4942f;
+    margin:15px 0 25px;
+}
+
+.mma-heritage-content p{
+    font-size:15px;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.mma-heritage-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    padding:12px 24px;
+
+    border:1px solid #c4942f;
+    border-radius:8px;
+
+    color:#c4942f !important;
+    text-decoration:none;
+
+    font-weight:600;
+    transition:.3s ease;
+}
+
+.mma-heritage-btn:hover{
+    background:#c4942f;
+    color:#fff !important;
+}
+
+.mma-heritage-btn i{
+    font-size:12px;
+}
+
+/*core values*/
+
+/* ===================================
+   MMA CORE PILLARS
+=================================== */
+
+.mma-pillars-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.mma-section-title{
+    max-width:950px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+.mma-sub-heading{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    margin-bottom:15px;
+}
+
+.mma-sub-heading span{
+    width:80px;
+    height:2px;
+    background:#c7941d;
+    position:relative;
+}
+.mma-sub-heading span:last-child:after{
+    content:'';
+    position:absolute;
+    right:-6px;
+    top:50%;
+    width:8px;
+    height:8px;
+    background:#c7941d;
+    border-radius:50%;
+    transform:translateY(-50%);
+}
+
+.mma-sub-heading span:first-child:before{
+    content:'';
+    position:absolute;
+    left:-6px;
+    top:50%;
+    width:8px;
+    height:8px;
+    background:#c7941d;
+    border-radius:50%;
+    transform:translateY(-50%);
+}
+
+.mma-sub-heading h6{
+    margin:0;
+    color:#c7941d;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+.mma-section-title span{
+    width:90px;
+    height:2px;
+    background:#d4a437;
+}
+
+.mma-section-title h2{
+    margin:0;
+    color:#082b56;
+    font-size:34px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* CARD */
+
+.mma-pillar-card{
+    background:#fff;
+    border:1px solid #eadfcb;
+    border-radius:16px;
+
+    padding:85px 30px 35px;
+
+    text-align:center;
+
+    position:relative;
+
+    transition:.4s ease;
+    overflow:visible;
+
+    height:100%;
+}
+
+/* TOP GOLD LINE */
+
+.mma-pillar-card::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:0;
+    height:4px;
+
+    background:#d4a437;
+
+    transition:.4s;
+}
+
+.mma-pillar-card:hover::before{
+    width:100%;
+}
+
+/* ICON */
+
+.mma-pillar-icon{
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:#082b56;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:absolute;
+    top:-30px;
+    left:50%;
+    transform:translateX(-50%);
+
+    transition:.4s ease;
+}
+
+.mma-pillar-icon i{
+    color:#d4a437;
+    font-size:34px;
+}
+
+/* CONTENT */
+
+.mma-pillar-card h3{
+    color:#082b56;
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.mma-pillar-card p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.mma-pillar-card a{
+    color:#d4a437;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.mma-pillar-card a i{
+    margin-left:6px;
+    transition:.3s;
+}
+
+/* HOVER */
+
+.mma-pillar-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    border-color:#d4a437;
+}
+
+.mma-pillar-card:hover .mma-pillar-icon{
+    background:#d4a437;
+    transform:translateX(-50%) scale(1.08);
+}
+
+.mma-pillar-card:hover .mma-pillar-icon i{
+    color:#082b56;
+}
+
+.mma-pillar-card:hover a i{
+    transform:translateX(6px);
+}
+
+
+.mma-pillar-card a{
+    color:#d4a437;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    transition:.3s ease;
+}
+
+.mma-pillar-card a i{
+    margin-left:6px;
+    transition:.3s ease;
+}
+
+/* HOVER EFFECTS */
+
+.mma-pillar-card:hover{
+    transform:translateY(-12px);
+    border-color:#d4a437;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.08);
+}
+
+.mma-pillar-card:hover .mma-pillar-icon{
+    background:#d4a437;
+    transform:translateX(-50%) scale(1.08);
+}
+
+.mma-pillar-card:hover .mma-pillar-icon i{
+    color:#082b56;
+}
+
+.mma-pillar-card:hover a{
+    color:#082b56;
+}
+
+.mma-pillar-card:hover a i{
+    transform:translateX(6px);
+}
+
+/* ==========================================
+   LARGE TABLET
+========================================== */
+
+@media(max-width:1199px){
+
+    .mma-pillar-card{
+        padding:75px 25px 30px;
+    }
+
+    .mma-pillar-card h3{
+        font-size:24px;
+    }
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:991px){
+
+    .mma-pillars-section{
+        padding:80px 0;
+    }
+
+    .mma-section-title{
+        margin-bottom:60px;
+    }
+
+    .mma-section-title h2{
+        font-size:28px;
+    }
+
+    .mma-pillar-card{
+        margin-bottom:20px;
+    }
+
+    .mma-pillar-card h3{
+        font-size:22px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:767px){
+
+    .mma-pillars-section{
+        padding:70px 0;
+    }
+
+    .mma-section-title{
+        gap:15px;
+        margin-bottom:50px;
+    }
+
+    .mma-section-title span{
+        width:40px;
+    }
+
+    .mma-section-title h2{
+        font-size:22px;
+        text-align:center;
+    }
+
+    .mma-pillar-card{
+        padding:70px 25px 30px;
+    }
+
+    .mma-pillar-icon{
+        width:80px;
+        height:80px;
+        top:-40px;
+    }
+
+    .mma-pillar-icon i{
+        font-size:28px;
+    }
+
+    .mma-pillar-card h3{
+        font-size:21px;
+    }
+
+    .mma-pillar-card p{
+        font-size:14px;
+        line-height:1.8;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+    .mma-section-title h2{
+        font-size:20px;
+    }
+
+    .mma-pillar-card{
+        padding:65px 20px 25px;
+    }
+
+    .mma-pillar-icon{
+        width:75px;
+        height:75px;
+    }
+
+    .mma-pillar-icon i{
+        font-size:26px;
+    }
+
+    .mma-pillar-card h3{
+        font-size:19px;
+    }
+}
+/* Tablet */
+@media (max-width: 991px){
+
+    .mma-pillars-section .col-md-6{
+        margin-bottom:80px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 767px){
+
+
+     .mma-pillar-icon{
+        top:-35px;
+        width:75px;
+        height:75px;
+    }
+
+    .mma-pillars-section .col-md-6,
+    .mma-pillars-section .col-sm-12{
+        margin-bottom:90px;
+    }
+
+    .mma-pillars-section .col-md-6:last-child,
+    .mma-pillars-section .col-sm-12:last-child{
+        margin-bottom:0;
+    }
+
+}
+
+/*future prgms*/
+
+/* ==================================================
+   MMA PROGRAMS & INITIATIVES SECTION
+================================================== */
+
+.mma-programs-section{
+    padding:100px 0;
+    background:#faf8f3;
+    position:relative;
+    overflow:hidden;
+}
+
+/* =====================================
+   SECTION TITLE
+===================================== */
+
+.mma-section-title{
+    max-width:900px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.mma-subtitle{
+    display:inline-block;
+    color:#d4a437;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    position:relative;
+    padding:0 70px;
+}
+
+.mma-subtitle:before,
+.mma-subtitle:after{
+    content:'';
+    position:absolute;
+    top:50%;
+    width:55px;
+    height:2px;
+    background:#d4a437;
+}
+
+.mma-subtitle:before{
+    left:0;
+}
+
+.mma-subtitle:after{
+    right:0;
+}
+
+.mma-section-title h2{
+    font-family:'Drose'!important;
+    font-size:45px;
+    line-height:1.1;
+    color:#082b56;
+    font-weight:700;
+    margin:20px 0;
+}
+
+.mma-title-divider{
+    width:90px;
+    height:5px;
+    background:#c7941d;
+    border-radius:50px;
+    margin:0 auto 30px;
+}
+.mma-section-title p{
+    max-width:900px;
+    margin:auto;
+    color:#555;
+    font-size:22px;
+    line-height:1.8;
+}
+
+
+/* =====================================
+   CARD
+===================================== */
+
+.mma-program-card{
+    background:#fff;
+    border:1px solid #eadfcb;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    height:100%;
+    transition:all .4s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.mma-program-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+    border-color:#d4a437;
+}
+
+/* =====================================
+   IMAGE
+===================================== */
+
+.mma-program-image{
+    height:260px;
+    overflow:hidden;
+    position:relative;
+}
+
+.mma-program-image:before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        to top,
+        rgba(8,43,86,.35),
+        rgba(8,43,86,.05)
+    );
+    z-index:1;
+}
+
+.mma-program-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:all .6s ease;
+}
+
+.mma-program-card:hover .mma-program-image img{
+    transform:scale(1.08);
+}
+
+/* =====================================
+   ICON
+===================================== */
+
+.mma-program-icon{
+    width:95px;
+    height:95px;
+    background:#082b56;
+    border:4px solid #fff;
+    border-radius:50%;
+    position:absolute;
+    left:50%;
+    top:212px;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:5;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:all .4s ease;
+}
+
+.mma-program-icon i{
+    color:#d4a437;
+    font-size:34px;
+    transition:.4s;
+}
+
+.mma-program-card:hover .mma-program-icon{
+    background:#d4a437;
+    transform:translateX(-50%) scale(1.08);
+}
+
+.mma-program-card:hover .mma-program-icon i{
+    color:#082b56;
+}
+
+/* =====================================
+   CONTENT
+===================================== */
+
+.mma-program-content{
+    padding:75px 28px 35px;
+    text-align:center;
+}
+
+.mma-program-content h3{
+    font-size:30px;
+    color:#082b56;
+    font-weight:700;
+    line-height:1.3;
+    margin-bottom:18px;
+    min-height:78px;
+}
+
+.mma-program-content h3:after{
+    content:'';
+    display:block;
+    width:55px;
+    height:3px;
+    background:#d4a437;
+    margin:18px auto 0;
+}
+
+.mma-program-content p{
+    color:#666;
+    line-height:1.9;
+    font-size:16px;
+    margin-bottom:30px;
+    min-height:145px;
+}
+
+.mma-program-content a{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:#d4a437;
+    font-weight:700;
+    font-size:17px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.mma-program-content a i{
+    transition:.3s;
+}
+
+.mma-program-content a:hover{
+    color:#082b56;
+}
+
+.mma-program-content a:hover i{
+    transform:translateX(6px);
+}
+
+/* =====================================
+   ROW SPACING
+===================================== */
+
+.mma-programs-section .row{
+    row-gap:35px;
+}
+
+/* =====================================
+   LARGE TABLET
+===================================== */
+
+@media(max-width:1199px){
+
+    .mma-program-content h3{
+        font-size:26px;
+    }
+
+    .mma-program-content p{
+        min-height:170px;
+    }
+
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:991px){
+
+    .mma-programs-section{
+        padding:90px 0;
+    }
+
+    .mma-section-title{
+        margin-bottom:60px;
+    }
+
+    .mma-section-title h2{
+        font-size:46px;
+    }
+
+    .mma-section-title p{
+        font-size:18px;
+    }
+
+    .mma-program-card{
+        margin-bottom:15px;
+    }
+
+    .mma-program-content h3{
+        min-height:auto;
+    }
+
+    .mma-program-content p{
+        min-height:auto;
+    }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:767px){
+
+    .mma-programs-section{
+        padding:70px 0;
+    }
+
+    .mma-section-title{
+        margin-bottom:50px;
+    }
+
+    .mma-subtitle{
+        font-size:13px;
+        padding:0 45px;
+    }
+
+    .mma-subtitle:before,
+    .mma-subtitle:after{
+        width:30px;
+    }
+
+    .mma-section-title h2{
+        font-size:34px;
+    }
+
+    .mma-section-title p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .mma-program-image{
+        height:220px;
+    }
+
+    .mma-program-icon{
+        width:80px;
+        height:80px;
+        top:180px;
+    }
+
+    .mma-program-icon i{
+        font-size:28px;
+    }
+
+    .mma-program-content{
+        padding:60px 20px 25px;
+    }
+
+    .mma-program-content h3{
+        font-size:24px;
+    }
+
+    .mma-program-content p{
+        font-size:15px;
+        margin-bottom:20px;
+    }
+
+    .mma-program-content a{
+        font-size:16px;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media(max-width:480px){
+
+    .mma-section-title h2{
+        font-size:28px;
+    }
+
+    .mma-section-title p{
+        font-size:15px;
+    }
+
+    .mma-program-image{
+        height:200px;
+    }
+
+    .mma-program-icon{
+        width:75px;
+        height:75px;
+        top:165px;
+    }
+
+    .mma-program-icon i{
+        font-size:25px;
+    }
+
+    .mma-program-content h3{
+        font-size:22px;
+    }
+
+    .mma-program-content p{
+        font-size:14px;
+        line-height:1.8;
+    }
+}
+
+@media(max-width:991px){
+
+    .mma-section-title h2{
+        font-size:58px;
+    }
+
+    .mma-section-title p{
+        font-size:18px;
+    }
+}
+
+@media(max-width:767px){
+
+    .mma-sub-heading span{
+        width:40px;
+    }
+
+    .mma-sub-heading h6{
+        font-size:12px;
+        letter-spacing:1px;
+    }
+
+    .mma-section-title h2{
+        font-size:42px;
+    }
+
+    .mma-title-divider{
+        width:70px;
+    }
+
+    .mma-section-title p{
+        font-size:16px;
+        line-height:1.7;
+    }
+}
+
+@media(max-width:480px){
+
+    .mma-section-title h2{
+        font-size:34px;
+    }
+
+    .mma-section-title p{
+        font-size:15px;
+    }
+}
+
+
+/*heritage css*/
+
+/* ================================
+   MMA HERITAGE TIMELINE
+================================ */
+
+.mma-heritage-timeline-section{
+    padding:100px 0;
+    background:#fbf6ee;
+    overflow:hidden;
+}
+
+.mma-heritage-title{
+    margin:25px 0;
+    line-height:1.05;
+    font-family:'Drose', serif;
+}
+.mma-heritage-title .line1,
+.mma-heritage-title .line2{
+    white-space:nowrap;
+}
+.mma-heritage-title .line1{
+    display:block;
+    color:#082b63;
+    font-size:clamp(42px,4vw,72px);
+}
+
+.mma-heritage-title .line2{
+    display:block;
+    color:#c89b3c;
+    font-size:clamp(42px,4vw,72px);
+}
+
+.mma-heritage-title h5{
+    color:#c58b25;
+    font-size:15px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.mma-heritage-title h2{
+    color:#082b56;
+    font-size:58px;
+    font-weight:800;
+    line-height:1;
+    margin-bottom:18px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.mma-heritage-divider{
+    width:80px;
+    height:3px;
+    background:#c58b25;
+    margin:0 auto 22px;
+    position:relative;
+}
+
+.mma-heritage-divider:after{
+    content:"";
+    width:12px;
+    height:12px;
+    background:#c58b25;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%) rotate(45deg);
+}
+
+.mma-heritage-title p{
+    color:#42526b;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* TIMELINE */
+
+.mma-timeline-wrapper{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:55px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.mma-timeline-line{
+    position:absolute;
+    left:8%;
+    right:8%;
+    top:185px;
+    height:2px;
+    background:#d2a149;
+    transform:scaleX(0);
+    transform-origin:left center;
+    transition:1.4s ease;
+}
+
+.mma-timeline-wrapper.active .mma-timeline-line{
+    transform:scaleX(1);
+}
+
+.mma-timeline-item{
+    position:relative;
+    text-align:center;
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s ease;
+}
+
+.mma-timeline-wrapper.active .mma-timeline-item{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.mma-timeline-wrapper.active .mma-timeline-item:nth-child(2){
+    transition-delay:.2s;
+}
+
+.mma-timeline-wrapper.active .mma-timeline-item:nth-child(3){
+    transition-delay:.45s;
+}
+
+.mma-timeline-wrapper.active .mma-timeline-item:nth-child(4){
+    transition-delay:.7s;
+}
+
+.mma-timeline-wrapper.active .mma-timeline-item:nth-child(5){
+    transition-delay:.95s;
+}
+
+/* PHOTO */
+
+.mma-timeline-photo{
+    width:100%;
+    height:150px;
+    border-radius:16px;
+    overflow:hidden;
+    border:4px solid #ead7b7;
+    box-shadow:0 14px 35px rgba(0,0,0,.12);
+    position:relative;
+    background:#fff;
+    transition:.45s ease;
+}
+
+.mma-timeline-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:sepia(35%);
+    transition:.6s ease;
+}
+
+.mma-timeline-item:hover .mma-timeline-photo{
+    transform:translateY(-8px);
+    border-color:#c58b25;
+    box-shadow:0 22px 45px rgba(0,0,0,.18);
+}
+
+.mma-timeline-item:hover .mma-timeline-photo img{
+    transform:scale(1.08);
+    filter:sepia(10%);
+}
+
+/* CONNECTOR */
+
+.mma-timeline-dot{
+    width:18px;
+    height:18px;
+    background:#c58b25;
+    border-radius:50%;
+    margin:27px auto 18px;
+    position:relative;
+    z-index:2;
+    box-shadow:0 0 0 6px rgba(197,139,37,.14);
+}
+
+.mma-timeline-dot:before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:-34px;
+    width:2px;
+    height:34px;
+    background:#d2a149;
+    transform:translateX(-50%) scaleY(0);
+    transform-origin:top;
+    transition:.6s ease;
+}
+
+.mma-timeline-wrapper.active .mma-timeline-dot:before{
+    transform:translateX(-50%) scaleY(1);
+}
+
+.mma-timeline-content h4{
+    color:#c58b25;
+    font-size:26px;
+    font-weight:800;
+    margin-bottom:8px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.mma-timeline-content h3{
+    color:#082b56;
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.mma-timeline-content p{
+    color:#43516a;
+    font-size:15px;
+    line-height:1.75;
+    margin:0 auto;
+    max-width:230px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1199px){
+    .mma-timeline-wrapper{
+        gap:35px;
+    }
+
+    .mma-timeline-photo{
+        height:135px;
+    }
+}
+
+@media(max-width:991px){
+    .mma-heritage-timeline-section{
+        padding:80px 0;
+    }
+
+    .mma-heritage-title h2{
+        font-size:44px;
+    }
+
+    .mma-timeline-wrapper{
+        grid-template-columns:repeat(2, 1fr);
+        gap:70px 35px;
+    }
+
+    .mma-timeline-line{
+        display:none;
+    }
+
+    .mma-timeline-dot{
+        margin-top:24px;
+    }
+}
+
+@media(max-width:767px){
+    .mma-heritage-title{
+        margin-bottom:55px;
+    }
+
+    .mma-heritage-title h2{
+        font-size:36px;
+    }
+
+    .mma-heritage-title p{
+        font-size:15px;
+    }
+
+    .mma-timeline-wrapper{
+        display:block;
+        padding-left:25px;
+    }
+
+    .mma-timeline-wrapper:before{
+        content:"";
+        position:absolute;
+        left:7px;
+        top:0;
+        width:2px;
+        height:100%;
+        background:#d2a149;
+        transform:scaleY(0);
+        transform-origin:top;
+        transition:1.2s ease;
+    }
+
+    .mma-timeline-wrapper.active:before{
+        transform:scaleY(1);
+    }
+
+    .mma-timeline-item{
+        text-align:left;
+        margin-bottom:50px;
+        padding-left:25px;
+    }
+
+    .mma-timeline-photo{
+        height:210px;
+    }
+
+    .mma-timeline-dot{
+        position:absolute;
+        left:-26px;
+        top:225px;
+        margin:0;
+    }
+
+    .mma-timeline-dot:before{
+        display:none;
+    }
+
+    .mma-timeline-content{
+        margin-top:25px;
+    }
+
+    .mma-timeline-content p{
+        max-width:100%;
+    }
+}
+
+@media(max-width:480px){
+    .mma-heritage-timeline-section{
+        padding:65px 0;
+    }
+
+    .mma-heritage-title h2{
+        font-size:32px;
+    }
+
+    .mma-timeline-photo{
+        height:180px;
+    }
+
+    .mma-timeline-dot{
+        top:195px;
+    }
+
+    .mma-timeline-content h4{
+        font-size:24px;
+    }
+
+    .mma-timeline-content h3{
+        font-size:20px;
+    }
+}
+
+/*membership css*/
+
+/* ==================================
+   MMA MEMBERSHIP SECTION
+================================== */
+
+.mma-membership-section{
+    position:relative;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+.mma-membership-title{
+    max-width:850px;
+    margin:0 auto 70px;
+}
+
+.mma-membership-title span{
+    color:#c99627;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    display:block;
+    margin-bottom:12px;
+    text-transform:uppercase;
+}
+
+.mma-membership-title h2{
+    font-size:58px;
+    font-weight:700;
+    color:#08275c;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.mma-membership-title p{
+    font-size:18px;
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+/* ==================================
+   CARD
+================================== */
+
+.mma-plan-card{
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:20px;
+    padding:35px;
+    height:100%;
+    position:relative;
+    transition:.45s ease;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.04);
+}
+
+.mma-plan-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+}
+
+.mma-plan-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:#d7a130;
+    transform:scaleX(0);
+    transition:.4s;
+}
+
+.mma-plan-card:hover::before{
+    transform:scaleX(1);
+}
+
+/* ==================================
+   FEATURED CARD
+================================== */
+
+.mma-plan-card.featured{
+    border:2px solid #d7a130;
+    transform:scale(1.03);
+    z-index:2;
+}
+
+.mma-plan-card.featured:hover{
+    transform:translateY(-12px) scale(1.05);
+}
+
+.popular-badge{
+    position:absolute;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#d7a130;
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    padding:8px 18px;
+    border-radius:30px;
+}
+
+/* ==================================
+   ICONS
+================================== */
+
+.mma-plan-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#08275c;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:25px;
+    font-size:28px;
+    transition:.4s;
+}
+
+.mma-plan-card:hover .mma-plan-icon{
+    transform:rotateY(180deg);
+}
+
+.mma-plan-icon.gold{
+    background:#d7a130;
+}
+
+/* ==================================
+   TEXT
+================================== */
+
+.mma-plan-card h4{
+    font-size:28px;
+    color:#08275c;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.mma-price{
+    font-size:42px;
+    font-weight:800;
+    color:#08275c;
+    margin-bottom:25px;
+}
+
+.mma-price span{
+    font-size:16px;
+    color:#777;
+    font-weight:500;
+}
+
+.mma-plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 30px;
+}
+
+.mma-plan-card ul li{
+    position:relative;
+    padding-left:28px;
+    margin-bottom:12px;
+    color:#555;
+    font-size:16px;
+}
+
+.mma-plan-card ul li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    color:#d7a130;
+    font-weight:700;
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+
+.mma-plan-btn{
+    display:inline-block;
+    background:#08275c;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.4s;
+    text-decoration:none;
+}
+
+.mma-plan-btn:hover{
+    background:#d7a130;
+    color:#fff;
+}
+
+.gold-btn{
+    background:#d7a130;
+}
+
+.gold-btn:hover{
+    background:#08275c;
+}
+
+.outline-btn{
+    background:transparent;
+    border:2px solid #08275c;
+    color:#08275c;
+}
+
+.outline-btn:hover{
+    background:#08275c;
+    color:#fff;
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:991px){
+
+    .mma-plan-card.featured{
+        transform:none;
+    }
+
+    .mma-membership-title h2{
+        font-size:42px;
+    }
+}
+
+@media(max-width:767px){
+
+    .mma-membership-title h2{
+        font-size:34px;
+    }
+
+    .mma-membership-title p{
+        font-size:16px;
+    }
+
+    .mma-plan-card{
+        padding:30px 25px;
+    }
+
+    .mma-price{
+        font-size:34px;
+    }
+
+    .mma-plan-card h4{
+        font-size:24px;
+    }
+}
+
+@media(max-width:480px){
+
+    .mma-membership-title h2{
+        font-size:30px;
+    }
+
+    .mma-plan-card{
+        border-radius:16px;
+    }
+
+    .mma-price{
+        font-size:30px;
+    }
+
+    .mma-plan-btn{
+        width:100%;
+        text-align:center;
+    }
+}
+
+/*gallery*/
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:991px){
+
+    .instagram_image_box img{
+        height:220px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .instagram_section_home_one{
+        padding:80px 0;
+    }
+
+    .instagram_image_box{
+        border-radius:14px;
+    }
+
+    .instagram_image_box figure{
+        border-radius:14px;
+    }
+
+    .instagram_image_box img{
+        height:180px;
+        border-radius:14px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .instagram_section_home_one .row{
+        --bs-gutter-x:12px;
+        --bs-gutter-y:12px;
+    }
+
+    .instagram_image_box img{
+        height:150px;
+    }
+
+}
+.instagram_section_home_one .container{
+    background:#fff;
+    border-radius:35px;
+    padding:50px;
+    box-shadow:0 15px 50px rgba(0,0,0,.05);
+}
+
+@media(max-width:767px){
+    .instagram_section_home_one .container{
+        padding:25px;
+        border-radius:20px;
+    }
+}
+/* Drose Heading Style */
+/* ==========================
+   MMA GALLERY TITLE
+========================== */
+
+.mma-gallery-title h2{
+    font-family:'Drose', serif !important;
+    font-size:clamp(36px, 5vw, 72px);
+    font-weight:400;
+    line-height:1;
+    color:#08275c;
+    margin-bottom:20px;
+    letter-spacing:-1px;
+}
+
+.mma-gallery-title h5{
+    font-size:clamp(12px, 1.2vw, 14px);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:#c99a2e;
+    font-weight:700;
+    margin-bottom:15px;
+}
+@media(max-width:767px){
+
+    .mma-gallery-title h2{
+        line-height:1.1;
+        letter-spacing:0;
+    }
+
+    .mma-gallery-title h5{
+        letter-spacing:2px;
+    }
+}
+
+.mma-gallery-title p{
+    max-width:700px;
+    margin:0 auto;
+    color:#6b7280;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* Gallery Card */
+.instagram_image_box {
+    overflow: hidden;
+    border-radius: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Image Wrapper */
+.instagram_image_box figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    position: relative;
+}
+
+/* Image */
+.instagram_image_box img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+
+    /* Start slightly zoomed */
+    transform: scale(1.08);
+
+    transition: all 0.8s cubic-bezier(.19,1,.22,1);
+}
+
+/* Hover = Zoom Out */
+.instagram_image_box:hover img {
+    transform: scale(1);
+}
+
+/* Dark Overlay */
+.instagram_image_box figure::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(7, 24, 53, 0.25);
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.instagram_image_box:hover figure::before {
+    opacity: 1;
+}
+
+/* Gallery Icon */
+.instagram_image_box figure::after {
+    content: "\f00e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+    background: #c89b3c;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.4s ease;
+
+    z-index: 2;
+}
+
+.instagram_image_box:hover figure::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Show More Button */
+.mma-gallery-btn{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.mma-show-more-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:14px 34px;
+
+    background:#fff;
+    color:#c89b3c;
+
+    border:2px solid #d9c39a;
+    border-radius:50px;
+
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+
+    transition:all .4s ease;
+}
+
+.mma-show-more-btn i{
+    transition:all .4s ease;
+}
+
+.mma-show-more-btn:hover{
+    background:#c89b3c;
+    color:#fff;
+    border-color:#c89b3c;
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(200,155,60,.25);
+}
+
+.mma-show-more-btn:hover i{
+    transform:translateX(5px);
+}
+
+/* cta sec*/
+
+/* ==========================================
+   MMA LEGACY CTA
+========================================== */
+
+.mma-legacy-cta{
+    padding: 40px 0 100px;
+    background:#f8f6f1;
+}
+
+.mma-legacy-box{
+    position:relative;
+    overflow:hidden;
+    border-radius:30px;
+    padding:70px 40px;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(5,32,74,.90),
+        rgba(5,32,74,.90)
+    ),
+    url('../images/mma/alumni-group.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+/* Decorative Light Effect */
+
+.mma-legacy-box::before{
+    content:'';
+    position:absolute;
+    top:-120px;
+    left:-120px;
+
+    width:350px;
+    height:350px;
+
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+}
+
+.mma-legacy-box::after{
+    content:'';
+    position:absolute;
+    bottom:-140px;
+    right:-140px;
+
+    width:380px;
+    height:380px;
+
+    background:rgba(255,255,255,.05);
+    border-radius:50%;
+}
+
+.mma-legacy-content{
+    position:relative;
+    z-index:2;
+}
+
+.mma-legacy-content h2{
+    color:#fff;
+    font-size:52px;
+    line-height:1.15;
+    font-weight:700;
+    margin-bottom:35px;
+
+    font-family:'DM Serif Display', serif;
+}
+
+/* Buttons */
+
+.mma-legacy-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.mma-btn-primary,
+.mma-btn-outline{
+    min-width:190px;
+    height:56px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50px;
+
+    font-size:15px;
+    font-weight:600;
+
+    text-decoration:none;
+    transition:.4s ease;
+}
+
+/* Gold Button */
+
+.mma-btn-primary{
+    background:#c89b3c;
+    color:#fff;
+    border:2px solid #c89b3c;
+}
+
+.mma-btn-primary:hover{
+    background:#d7a73a;
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(200,155,60,.35);
+    color:#fff;
+}
+
+/* Outline Button */
+
+.mma-btn-outline{
+    border:2px solid rgba(255,255,255,.5);
+    color:#fff;
+    background:transparent;
+}
+
+.mma-btn-outline:hover{
+    background:#fff;
+    color:#05204a;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+    .mma-legacy-box{
+        padding:60px 25px;
+    }
+
+    .mma-legacy-content h2{
+        font-size:40px;
+    }
+}
+
+@media(max-width:767px){
+
+    .mma-legacy-content h2{
+        font-size:30px;
+        line-height:1.3;
+    }
+
+    .mma-btn-primary,
+    .mma-btn-outline{
+        width:100%;
+        max-width:280px;
+    }
+
+    .mma-legacy-buttons{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:480px){
+
+    .mma-legacy-box{
+        border-radius:22px;
+        padding:50px 20px;
+    }
+
+    .mma-legacy-content h2{
+        font-size:26px;
+    }
+}
+
+/* footer css*/
+
+/* ===================================
+   MMA FOOTER
+=================================== */
+
+.mma-footer{
+    background:linear-gradient(135deg,#021538,#03235c);
+    position:relative;
+    overflow:hidden;
+    color:#fff;
+    padding-top:50px;
+}
+
+.mma-footer::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:linear-gradient(
+        to right,
+        #c89b3c,
+        #f4d27b,
+        #c89b3c
+    );
+}
+
+/* Footer Grid */
+
+.mma-footer-top{
+    display:grid;
+    grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1fr
+    1.2fr;
+
+    gap:40px;
+    padding-bottom:40px;
+}
+
+/* Columns */
+
+.mma-footer-col h4{
+    color:#c89b3c;
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.mma-footer-col ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.mma-footer-col ul li{
+    margin-bottom:8px;
+}
+
+.mma-footer-col ul li a{
+    color:rgba(255,255,255,.78);
+    font-size:14px;
+    transition:.3s;
+}
+
+.mma-footer-col ul li a:hover{
+    color:#c89b3c;
+    padding-left:5px;
+}
+
+/* Logo */
+
+.mma-footer-logo img{
+    max-width:180px;
+}
+
+.mma-about p{
+    margin-top:18px;
+    color:rgba(255,255,255,.75);
+    font-size:14px;
+    line-height:26px;
+}
+
+/* Social */
+
+.mma-social-links{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.mma-social-links a{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#fff;
+    transition:.3s;
+}
+
+.mma-social-links a:hover{
+    background:#c89b3c;
+    border-color:#c89b3c;
+    transform:translateY(-3px);
+}
+
+/* Newsletter */
+
+.newsletter-text{
+    color:rgba(255,255,255,.75);
+    font-size:14px;
+    line-height:24px;
+    margin-bottom:18px;
+}
+
+.mma-newsletter-form{
+    position:relative;
+}
+
+.mma-newsletter-form input{
+    width:100%;
+    height:50px;
+
+    border:none;
+    outline:none;
+
+    border-radius:8px;
+
+    padding:0 55px 0 15px;
+
+    background:rgba(255,255,255,.08);
+    color:#fff;
+}
+
+.mma-newsletter-form input::placeholder{
+    color:rgba(255,255,255,.55);
+}
+
+.mma-newsletter-form button{
+    position:absolute;
+    right:4px;
+    top:4px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:6px;
+
+    background:#c89b3c;
+    color:#fff;
+
+    transition:.3s;
+}
+
+.mma-newsletter-form button:hover{
+    background:#d6a93f;
+}
+
+/* Footer Bottom */
+
+.mma-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+
+    padding:18px 0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.footer-copy{
+    color:rgba(255,255,255,.65);
+    font-size:13px;
+}
+
+.footer-love{
+    color:rgba(255,255,255,.75);
+    font-size:13px;
+}
+
+.footer-love i{
+    color:#c89b3c;
+    margin-right:5px;
+}
+
+.footer-links{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.footer-links a{
+    color:rgba(255,255,255,.65);
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:#c89b3c;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:1200px){
+
+    .mma-footer-top{
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .mma-footer-top{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .mma-social-links{
+        justify-content:center;
+    }
+
+    .mma-footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .mma-footer{
+        padding-top:40px;
+    }
+
+    .mma-footer-logo img{
+        max-width:150px;
+    }
+
+}
+
+/*members section*/
+
+/* =========================================
+   MMA LEADERSHIP SECTION
+========================================= */
+
+.mma-leadership-section{
+    position:relative;
+    overflow:hidden;
+    padding:120px 0;
+    background:linear-gradient(
+    135deg,
+    #001f5c 0%,
+    #002a78 40%,
+    #00194a 100%);
+}
+
+/* Decorative Shapes */
+
+.mma-leader-shape{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    opacity:.08;
+}
+
+.shape-left{
+    left:-120px;
+    top:120px;
+    background:#f4c542;
+}
+
+.shape-right{
+    right:-120px;
+    bottom:120px;
+    background:#f4c542;
+}
+
+/* Heading */
+
+.mma-leadership-heading{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 60px;
+}
+.mma-leadership-heading .mma-subtitle{
+    display:inline-block;
+    font-size:clamp(12px,1.2vw,14px);
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#c99a2e;
+    margin-bottom:15px;
+}
+.mma-heading-wrap{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.mma-subtitle{
+    display:inline-flex;
+    align-items:center;
+    gap:30px;
+    
+    color:#c89b3c;
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.mma-subtitle::before,
+.mma-subtitle::after{
+    content:'';
+    width:70px;
+    height:2px;
+    background:#c89b3c;
+}
+.mma-leadership-heading h2{
+    font-family:'Drose', serif !important;
+    font-size:clamp(38px,5vw,72px);
+    font-weight:400;
+    line-height:1.05;
+   color:#ffffff;
+    margin-bottom:20px;
+}
+
+.mma-leadership-heading h2 span{
+    color:#c99a2e;
+}
+
+.mma-leadership-heading p{
+    font-size:clamp(16px,1.5vw,22px);
+    line-height:1.8;
+    color:#5b6780;
+    max-width:700px;
+    margin:0 auto;
+}
+
+/* Grid */
+
+.mma-leaders-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+}
+
+/* Card */
+
+.mma-leader-card{
+    background:linear-gradient(
+    180deg,
+    #faf8f3 0%,
+    #faf8f3 100%);
+    
+    border-radius:28px;
+    padding:35px 25px;
+    text-align:center;
+    position:relative;
+
+    transition:.5s;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.20);
+}
+
+/* Hover */
+
+.mma-leader-card:hover{
+    transform:
+    translateY(-15px)
+    scale(1.03);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.35);
+}
+
+/* Glow */
+
+.mma-leader-card::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    border-radius:28px;
+    background:
+    linear-gradient(
+    45deg,
+    rgba(255,255,255,.3),
+    transparent);
+    opacity:0;
+    transition:.5s;
+}
+
+.mma-leader-card:hover::before{
+    opacity:1;
+}
+
+/* Image */
+
+.mma-leader-image{
+    width:180px;
+    height:180px;
+    margin:auto;
+    border-radius:50%;
+    overflow:hidden;
+
+    border:6px solid #fff;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+    transition:.5s;
+}
+
+.mma-leader-card:hover .mma-leader-image{
+    transform:scale(1.08);
+}
+
+.mma-leader-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Title */
+
+.mma-leader-card h4{
+    margin-top:28px;
+    font-size:30px;
+    color:#001f5c;
+    font-weight:800;
+}
+
+.mma-leader-card h5{
+    margin-top:12px;
+    font-size:19px;
+    font-weight:600;
+    color:#222;
+    line-height:1.5;
+}
+
+/* Animation */
+
+.mma-leader-card{
+    opacity:0;
+    transform:translateY(70px);
+    animation:mmaFadeUp .8s ease forwards;
+}
+
+.mma-leader-card:nth-child(1){animation-delay:.1s;}
+.mma-leader-card:nth-child(2){animation-delay:.2s;}
+.mma-leader-card:nth-child(3){animation-delay:.3s;}
+.mma-leader-card:nth-child(4){animation-delay:.4s;}
+.mma-leader-card:nth-child(5){animation-delay:.5s;}
+.mma-leader-card:nth-child(6){animation-delay:.6s;}
+.mma-leader-card:nth-child(7){animation-delay:.7s;}
+
+@keyframes mmaFadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:1200px){
+
+.mma-leaders-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.mma-leadership-heading h2{
+    font-size:58px;
+}
+
+}
+
+@media(max-width:991px){
+
+.mma-leaders-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.mma-leadership-heading h2{
+    font-size:48px;
+}
+
+}
+
+@media(max-width:767px){
+
+.mma-leadership-section{
+    padding:80px 0;
+}
+
+.mma-leadership-heading{
+        margin-bottom:40px;
+    }
+
+    .mma-leadership-heading h2{
+        line-height:1.1;
+    }
+
+    .mma-leadership-heading .mma-subtitle{
+        letter-spacing:2px;
+    }
+
+    .mma-leadership-heading p{
+        line-height:1.7;
+    }
+
+.mma-leaders-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.mma-leader-card{
+    padding:30px 20px;
+}
+
+.mma-leader-image{
+    width:150px;
+    height:150px;
+}
+
+.mma-leader-card h4{
+    font-size:26px;
+}
+
+.mma-leader-card h5{
+    font-size:17px;
+}
+
+}.mma-heading-divider{
+    width:120px;
+    height:4px;
+    background:#f4c542;
+    margin:25px auto;
+    border-radius:20px;
+    position:relative;
+}
+
+.mma-heading-divider:before{
+    content:'';
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#f4c542;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.hero-tagline{
+    display:inline-block;
+    padding:10px 22px;
+    border:1px solid #d8c19a;
+    border-radius:50px;
+    background:rgba(255,255,255,0.6);
+    
+    color:#0a3478;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+}
+
+.hero-tagline:after{
+    display:none;
+}
+.hero-title{
+    margin:0 0 25px;
+    line-height:0.9;
+    font-family:'Drose', serif;
+}
+
+.hero-title .line1{
+    display:block;
+    color:#0a3478;
+    font-size:clamp(32px,5vw,55px);
+    font-weight: 600px;
+}
+
+.hero-title .line2{
+    display:block;
+    color:#d4a646;
+    font-size:clamp(32px,5vw,55px);
+     font-weight: 600px;
+}
+@media(max-width:767px){
+
+    .hero-tagline{
+        font-size:11px;
+        letter-spacing:2px;
+        padding:8px 16px;
+    }
+
+    .hero-title .line1,
+    .hero-title .line2{
+        font-size:42px;
+        line-height:0.95;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero-title .line1,
+    .hero-title .line2{
+        font-size:34px;
+    }
+}
+.mma-heritage-section{
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    padding:120px 0;
+}
+
+.mma-heritage-card{
+    max-width:650px;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(10px);
+    padding:60px;
+    border-radius:24px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.08);
+}
+
+.mma-subtitle{
+    display:inline-block;
+    color:#c89b3c;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.mma-subtitle:before{
+    content:'';
+    width:70px;
+    height:2px;
+    background:#c89b3c;
+    position:absolute;
+    left:-90px;
+    top:50%;
+}
+
+.mma-subtitle:after{
+    content:'';
+    width:70px;
+    height:2px;
+    background:#c89b3c;
+    position:absolute;
+    right:-90px;
+    top:50%;
+}
+
+.mma-heritage-card h2{
+    font-size:32px;
+    line-height:1.1;
+    color:#082b63;
+    margin-bottom:25px;
+    font-family:'Drose', serif;
+}
+
+.mma-heritage-card h2 span{
+    display:block;
+    color:#c89b3c;
+}
+
+.mma-heritage-card p{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:35px;
+}
+
+.mma-heritage-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:#082b63;
+    color:#fff;
+    padding:18px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.mma-heritage-btn:hover{
+    background:#c89b3c;
+    color:#fff;
+}
+
+/* ===============================
+   MMA HERITAGE STORY CARD
+================================= */
+
+.mmah-story-card{
+    max-width:700px;
+    background:rgba(255,255,255,0.94);
+    backdrop-filter:blur(12px);
+    padding:60px;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.08);
+}
+
+/* SUB TITLE */
+
+.mmah-story-heading{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.mmah-story-subtitle{
+    display:inline-flex;
+    align-items:center;
+    gap:25px;
+
+    color:#c89b3c;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.mmah-story-subtitle::before,
+.mmah-story-subtitle::after{
+    content:"";
+    width:70px;
+    height:2px;
+    background:#c89b3c;
+}
+
+/* TITLE */
+
+.mmah-story-title{
+    margin:0 0 25px;
+    line-height:1;
+    text-align:center;
+}
+
+.mmah-story-title-blue{
+    display:block;
+    font-family:'Drose', serif;
+    font-size:clamp(42px,4vw,72px);
+    color:#082b63;
+}
+
+.mmah-story-title-gold{
+    display:block;
+    font-family:'Drose', serif;
+    font-size:clamp(42px,4vw,72px);
+    color:#c89b3c;
+}
+
+/* DESCRIPTION */
+
+.mmah-story-description{
+    font-size:20px;
+    line-height:1.9;
+    color:#555;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+/* BUTTON */
+
+.mmah-story-button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    width:fit-content;
+    margin:auto;
+
+    padding:16px 34px;
+    border-radius:12px;
+
+    background:#082b63;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+
+    transition:all .35s ease;
+}
+
+.mmah-story-button:hover{
+    background:#c89b3c;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+.mmah-story-button i{
+    font-size:14px;
+}
+
+/* ===============================
+   TABLET
+================================= */
+
+@media(max-width:991px){
+
+    .mmah-story-card{
+        max-width:100%;
+        padding:45px 35px;
+    }
+
+    .mmah-story-title-blue,
+    .mmah-story-title-gold{
+        font-size:56px;
+    }
+
+    .mmah-story-description{
+        font-size:18px;
+    }
+}
+
+/* ===============================
+   MOBILE
+================================= */
+
+@media(max-width:767px){
+
+    .mmah-story-card{
+        padding:35px 25px;
+        border-radius:20px;
+    }
+
+    .mmah-story-subtitle{
+        font-size:12px;
+        letter-spacing:3px;
+        gap:15px;
+    }
+
+    .mmah-story-subtitle::before,
+    .mmah-story-subtitle::after{
+        width:40px;
+    }
+
+    .mmah-story-title-blue,
+    .mmah-story-title-gold{
+        font-size:38px;
+        line-height:1.05;
+    }
+
+    .mmah-story-description{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .mmah-story-button{
+        width:100%;
+        padding:15px 20px;
+    }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================= */
+
+@media(max-width:480px){
+
+    .mmah-story-title-blue,
+    .mmah-story-title-gold{
+        font-size:32px;
+    }
+
+    .mmah-story-subtitle{
+        font-size:11px;
+        letter-spacing:2px;
+    }
+
+    .mmah-story-subtitle::before,
+    .mmah-story-subtitle::after{
+        width:25px;
+    }
+}
+
+/* =========================
+   MMA CORE PILLARS HEADING
+========================= */
+
+.mmap-core-heading-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:70px;
+}
+
+.mmap-core-line{
+    width:90px;
+    height:2px;
+    background:#c89b3c;
+    display:block;
+    flex-shrink:0;
+}
+
+.mmap-core-heading{
+    margin:0;
+    color:#082b63;
+    font-family:'Drose', serif;
+    font-size:clamp(38px,4vw,45px);
+    font-weight: 500px;
+    line-height:1;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+    .mmap-core-heading{
+        font-size:48px;
+    }
+
+    .mmap-core-line{
+        width:60px;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .mmap-core-heading-wrap{
+        gap:15px;
+        margin-bottom:50px;
+    }
+
+    .mmap-core-heading{
+        font-size:32px;
+    }
+
+    .mmap-core-line{
+        width:35px;
+    }
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+    .mmap-core-heading{
+        font-size:26px;
+    }
+
+    .mmap-core-line{
+        width:20px;
+    }
+}
+/* ==================================
+   MMA HERITAGE SECTION TITLE
+================================== */
+
+.mmahistory-header-wrap{
+    max-width:900px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.mmahistory-label{
+    display:inline-block;
+    color:#c89b3c;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.mmahistory-main-title{
+    margin:0;
+    color:#082b63;
+    font-family:'Drose'!important;
+    font-size:clamp(42px,5vw,60px);
+    line-height:1;
+    margin-bottom:25px;
+}
+
+.mmahistory-divider{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.mmahistory-divider span{
+    position:relative;
+    width:120px;
+    height:2px;
+    background:#c89b3c;
+    display:block;
+}
+
+.mmahistory-divider span::before{
+    content:"◆";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:#c89b3c;
+    background:#f8f6f1;
+    padding:0 10px;
+    font-size:18px;
+}
+
+.mmahistory-intro{
+    max-width:800px;
+    margin:0 auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#5b6780;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+    .mmahistory-main-title{
+        font-size:58px;
+    }
+
+    .mmahistory-intro{
+        font-size:19px;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .mmahistory-header-wrap{
+        margin-bottom:50px;
+    }
+
+    .mmahistory-label{
+        font-size:12px;
+        letter-spacing:3px;
+    }
+
+    .mmahistory-main-title{
+        font-size:42px;
+    }
+
+    .mmahistory-divider span{
+        width:80px;
+    }
+
+    .mmahistory-intro{
+        font-size:16px;
+        line-height:1.8;
+    }
+}

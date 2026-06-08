@@ -1,0 +1,428 @@
+.programs_block_one {
+    position: relative;
+    z-index: 99;
+}
+.programs_block_one .image_box img{
+    width: 100%;
+}
+.programs_block_one .lower_content{
+    position: relative;
+    margin: 0px 40px;
+}
+.programs_block_one .lower_content:before{
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    width: 4px;
+    height: 50px;
+    content: '';
+    transition: .5s;
+    background-color: var(--primary-color);
+}
+.programs_block_one:hover .lower_content:before{
+    top: 0;
+    height: 100%;
+}
+.programs_block_one .lower_content::after{
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    width: 4px;
+    height: 50px;
+    content: '';
+    transition: .5s;
+    background-color: var(--primary-color);
+}
+.programs_block_one:hover .lower_content:after{
+    top: 0;
+    height: 100%;
+}
+.programs_block_one .lower_content .inner{
+    padding: 34px 30px 0px;   
+    margin-top: -54px;
+    transition: .5s;
+    background-color: var(--bs-white);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.programs_block_one:hover .lower_content .inner{
+    margin-top: -90px;
+    padding-bottom: 34px;
+}
+.programs_block_one .lower_content h4 a{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: var(--theme-color-two);
+}
+.programs_block_one .lower_content h4 a:hover{
+    color: var(--primary-color);
+}
+.programs_block_one .lower_content .link-btn{
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.programs_block_one:hover .lower_content .link-btn{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1.0);
+}
+.programs_block_one .lower_content .link-btn a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    display: inline-block;
+    color: var(--secondary-color);
+    font-family: var(--manrope);
+}
+.programs_block_one .lower_content .link-btn a:hover{
+    color: var(--primary-color);
+}
+
+.programs_section_home_one.style_two{
+    padding-bottom: 100px;
+}
+
+/*sec1*/
+
+/* ==========================
+   MMA GALLERY BANNER
+========================== */
+
+.mma-gallery-banner{
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at left center,
+    rgba(255,255,255,0.08) 0%,
+    transparent 35%),
+
+    radial-gradient(circle at right center,
+    rgba(255,255,255,0.08) 0%,
+    transparent 35%),
+
+    linear-gradient(
+    135deg,
+    #0a2554 0%,
+    #071d45 50%,
+    #04163a 100%
+    );
+
+    padding:130px 20px;
+    text-align:center;
+}
+
+/* Soft Glow */
+.mma-gallery-banner::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:700px;
+    height:700px;
+    background:radial-gradient(
+    circle,
+    rgba(255,255,255,0.05),
+    transparent 70%);
+    pointer-events:none;
+}
+
+.mma-gallery-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    margin:auto;
+}
+
+.mma-gallery-tag{
+    display:inline-block;
+    color:#d9a441;
+    font-size:14px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-top:12px;
+    margin-bottom:25px;
+}
+
+.mma-gallery-content h1{
+    color:#fff;
+    font-size:48px;
+    line-height:1.1;
+    font-weight:700;
+    margin-bottom:25px;
+    font-family:'Playfair Display', serif;
+}
+
+.mma-gallery-content p{
+    color:rgba(255,255,255,0.85);
+    font-size:16px;
+    line-height:1.7;
+    max-width:760px;
+    margin:auto;
+    font-weight:300;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media(max-width:991px){
+
+    .mma-gallery-banner{
+        padding:110px 25px;
+    }
+
+    .mma-gallery-content h1{
+        font-size:52px;
+    }
+
+    .mma-gallery-content p{
+        font-size:20px;
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:767px){
+
+    .mma-gallery-banner{
+        padding:90px 20px;
+    }
+
+    .mma-gallery-tag{
+        font-size:12px;
+        letter-spacing:3px;
+    }
+
+    .mma-gallery-content h1{
+        font-size:36px;
+        line-height:1.2;
+        margin-bottom:18px;
+    }
+
+    .mma-gallery-content p{
+        font-size:17px;
+        line-height:1.8;
+    }
+
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media(max-width:480px){
+    .mma-gallery-tag{
+         padding-top: 25px;
+        font-size:12px;
+        letter-spacing:3px;
+    }
+
+    .mma-gallery-content h1{
+        padding-top: 25px;
+        font-size:30px;
+    }
+
+    .mma-gallery-content p{
+        font-size:15px;
+    }
+
+}
+
+/* gallery*/
+
+/*=========================================
+ MMA GALLERY SECTION
+=========================================*/
+
+.mma-gallery-showcase{
+    background:#f6f4ef;
+    padding:100px 0;
+    overflow:hidden;
+}
+
+.mma-gallery-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.mma-gallery-header span{
+    display:block;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:#d5a53b;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.mma-gallery-header h2{
+    font-size:58px;
+    line-height:1.1;
+    color:#0b2855;
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    margin:0;
+}
+
+.mma-gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+}
+
+.mma-gallery-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:24px;
+    cursor:pointer;
+    background:#ddd;
+}
+
+.mma-gallery-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:all .7s ease;
+}
+
+.mma-gallery-card:hover img{
+    transform:scale(1.08);
+}
+
+.mma-gallery-card::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+    to top,
+    rgba(0,0,0,.35),
+    transparent);
+    opacity:0;
+    transition:.5s;
+}
+
+.mma-gallery-card:hover::after{
+    opacity:1;
+}
+
+/* Masonry Style Heights */
+
+.mma-large{
+    grid-row:span 2;
+    height:610px;
+}
+
+.mma-gallery-grid .mma-gallery-card:nth-child(2){
+    height:290px;
+}
+
+.mma-gallery-grid .mma-gallery-card:nth-child(3){
+    height:290px;
+}
+
+.mma-gallery-grid .mma-gallery-card:nth-child(4){
+    height:305px;
+}
+
+.mma-gallery-grid .mma-gallery-card:nth-child(5){
+    height:305px;
+}
+
+.mma-gallery-grid .mma-gallery-card:nth-child(6){
+    height:305px;
+}
+
+/* Floating Effect */
+
+.mma-gallery-card{
+    transition:all .4s ease;
+}
+
+.mma-gallery-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+}
+
+/*=========================================
+ TABLET
+=========================================*/
+
+@media(max-width:991px){
+
+    .mma-gallery-showcase{
+        padding:80px 0;
+    }
+
+    .mma-gallery-header h2{
+        font-size:42px;
+    }
+
+    .mma-large{
+        height:500px;
+    }
+
+}
+
+/*=========================================
+ MOBILE
+=========================================*/
+
+@media(max-width:767px){
+
+    .mma-gallery-showcase{
+        padding:70px 15px;
+    }
+
+    .mma-gallery-header{
+        margin-bottom:35px;
+    }
+
+    .mma-gallery-header h2{
+        font-size:34px;
+    }
+
+    .mma-gallery-grid{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .mma-large,
+    .mma-gallery-grid .mma-gallery-card:nth-child(2),
+    .mma-gallery-grid .mma-gallery-card:nth-child(3),
+    .mma-gallery-grid .mma-gallery-card:nth-child(4),
+    .mma-gallery-grid .mma-gallery-card:nth-child(5),
+    .mma-gallery-grid .mma-gallery-card:nth-child(6){
+        height:280px;
+        grid-row:auto;
+    }
+
+}
+
+/*=========================================
+ SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+    .mma-gallery-header h2{
+        font-size:28px;
+    }
+
+    .mma-gallery-card{
+        border-radius:18px;
+    }
+
+}
